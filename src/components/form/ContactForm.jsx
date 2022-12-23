@@ -2,12 +2,6 @@ import { React, Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormBox, ButtonAdd, InputBox, LabelBox } from './FormStyled';
 
-
-
-// const nameInputId = nanoid(5);
-// const numberInputId = nanoid(8)
-
-
 class ContactForm extends Component {
 
     state = {

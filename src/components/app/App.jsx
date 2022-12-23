@@ -1,8 +1,8 @@
 import { React, Component } from "react";
 import { nanoid } from 'nanoid';
-import ContactForm from "../form/ContactForm";
-import Contacts from "../contacts/Contacts";
-import Filter from "../filter/Filter";
+import ContactForm from "../Form/ContactForm";
+import Contacts from "../Contacts/Contacts";
+import Filter from "../Filter/Filter";
 import { DivBox, TitleBox, SecondaryTitleBox } from "./AppStyled";
 
 
@@ -46,7 +46,6 @@ export class App extends Component {
 
     const newContact = {
       id: nanoid(),
-      // id: this.state.id,
       name,
       number,
     };
@@ -65,12 +64,6 @@ export class App extends Component {
     this.setState({ filter: e.currentTarget.value });
   }
 
-  // contactFiltering = () => {
-  //   const { filter, contacts } = this.state;
-  //   const normalizeFilter = filter.toLowerCase();
-  //   return contacts.filter(contact => contact.name.toLowerCase().includes(normalizeFilter),
-  //   );
-  // }
 
   removeContact = (contactId) => {
     this.setState(prevState => ({
@@ -91,12 +84,10 @@ export class App extends Component {
 
 
   render() {
-    // this.chekingContacts();
     const normalizedFilter = this.state.filter.toLowerCase();
     const visibleContacts = this.state.contacts.filter(contact =>
       contact.name.toLowerCase().includes(normalizedFilter)
     );
-    // const filter = this.contactFiltering();
 
     return (
       <DivBox>
