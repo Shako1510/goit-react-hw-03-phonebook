@@ -1,9 +1,9 @@
 import { React, Component } from "react";
 import { nanoid } from 'nanoid';
-import ContactForm from "../Form/ContactForm";
-import Contacts from "../Contacts/Contacts";
-import Filter from "../Filter/Filter";
-import { DivBox, TitleBox, SecondaryTitleBox } from "./AppStyled";
+import ContactForm from "./Form/ContactForm";
+import Contacts from "./Contacts/Contacts";
+import Filter from "./Filter/Filter";
+import { DivBox, TitleBox, SecondaryTitleBox } from "./App/AppStyled";
 
 
 export class App extends Component {
