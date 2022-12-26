@@ -2,7 +2,7 @@ import { React, Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormBox, ButtonAdd, InputBox, LabelBox } from './FormStyled';
 
-class ContactForm extends Component {
+export class ContactForm extends Component {
 
     state = {
         name: '',
