@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import { React, Component } from "react";
 import { nanoid } from 'nanoid';
-import ContactForm from "./ContactForm";
-import Contacts from "./Contacts";
-import Filter from "./Filter";
+import ContactForm from "../Form/ContactForm";
+import Contacts from "../Contacts/Contacts";
+import Filter from "../Filter/Filter";
 import { DivBox, TitleBox, SecondaryTitleBox } from "./AppStyled";
 
 
